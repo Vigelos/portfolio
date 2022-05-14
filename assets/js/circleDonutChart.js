@@ -374,7 +374,7 @@ var circleDonutChart = function(chartElementID){
 		// if size ist not set, then take the options.scaling and the standard size of 200x200
 		if (!oTester.size){
 			svg.setAttribute('width', "50%");
-			svg.setAttribute('height', "auto");
+			svg.setAttribute('height', 200*options.scaling);
 			options.size = 200*options.scaling;
 		}
 		// if scaling not set, then take the size anc calculate the options.scaling
