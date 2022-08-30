@@ -8,7 +8,7 @@
                     function init()
                     {
                         var circle1 = new circleDonutChart('gpa');
-                        circle1.draw({end:3.80,start:0, maxValue:4, titlePosition:"outer-top", titleText:"GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
+                        circle1.draw({end:3.80,start:0, maxValue:4, titlePosition:"outer-top", titleText:"", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
                     }
 
                     init()
@@ -19,7 +19,24 @@
                     }
                 </script>
             </div>
-            <div id="gpa" style="width: 25%;height: 20%"></div>
+            <table width="100%" style="margin-bottom: 30px">
+                <tr style="width: 100%;margin-left: 50px;margin-right: 50px" >
+                    <td style="width: 50%">
+                        <div align="center">
+                            <div style="font-size: 20px;margin-bottom: -10px"> GPA </div>
+                            <div id="gpa" style="width: 25%;height: 20%"></div>
+                            <div style="font-size: 10px;color: gray;margin-top: -10px">(Including required and limited courses)</div>
+                        </div>
+                    </td>
+                    <td style="width: 50%">
+                        <div align="center">
+                            <div style="font-size: 20px"> Ranking </div>
+                            <div style="font-size: 40px;margin-top: 20px"># 1 / 43 </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
             <div> I have always been studying with diligence in the bachelor's program and got the GPA of 3.80, ranking top among my classmates. So there is no need to worry about my falling behind in the master's degree as I continue to try my best to become an exceptional student as before.</div>
 
         </div>
