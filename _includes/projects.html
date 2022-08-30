@@ -7,20 +7,19 @@
                 <script>
                     function init()
                     {
-                        var circle1 = new circleDonutChart('example');
+                        var circle1 = new circleDonutChart('gpa');
                         circle1.draw({end:3.80,start:0, maxValue:4, titlePosition:"outer-top", titleText:"GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
-                        var overall = document.getElementById("overallGPA")
                     }
 
                     init()
                     function showOverall()
                     {
-                        var circle1 = new circleDonutChart('example');
+                        var circle1 = new circleDonutChart('gpa');
                         circle1.draw({end:75,start:0, maxValue:100, titlePosition:"outer-top", titleText:"GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
                     }
                 </script>
             </div>
-            <div id="example" style="width: 25%;height: 20%"></div>
+            <div id="gpa" style="width: 25%;height: 20%"></div>
 
         </div>
     </section>
