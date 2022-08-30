@@ -1,43 +1,26 @@
 <div class="section-wrapper">
     <section>
-        <div class="full-width">
-            <div class="section-heading" id="featured-projects-text">Grades</div>
-            
-                <div class="project-technologies">
-                    <a class="semi-transparent-button with-border white-button" id="overallGPA">Overall</a>
-                    <a class="semi-transparent-button with-border white-button" id="basicCourseGPA">Basic</a>
-                    <a class="semi-transparent-button with-border white-button" id="professionalCourseGPA">Professional</a>
-                    <a class="semi-transparent-button with-border white-button" id="politicalCourseGPA">Political</a>
-                </div>
-
-            <div class="projects-wrapper">
-            <!-- filled in by js -->
+        <div class="full-width" align="center">
+            <div class="section-heading" id="featured-projects-text" style="font-size: 40px">Grade</div>
+            <div class="projects-wrapper" style="margin-top: 20px">
                 <script src="../assets/js/circleDonutChart.js"></script>
                 <script>
                     function init()
                     {
                         var circle1 = new circleDonutChart('example');
-                        circle1.draw({end:3.81,start:0, maxValue:4, titlePosition:"outer-top", titleText:"Overall GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
-
+                        circle1.draw({end:3.80,start:0, maxValue:4, titlePosition:"outer-top", titleText:"GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
                         var overall = document.getElementById("overallGPA")
-                        var basic = document.getElementById("basicCourseGPA")
-                        var professional = document.getElementById("professionalCourseGPA")
-                        var political = document.getElementById("politicalCourseGPA")
-
                     }
 
                     init()
-
-                    // document.addEventListener('click', moveAround, false);
-
                     function showOverall()
                     {
                         var circle1 = new circleDonutChart('example');
-                        circle1.draw({end:75,start:0, maxValue:100, titlePosition:"outer-top", titleText:"Overall GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
+                        circle1.draw({end:75,start:0, maxValue:100, titlePosition:"outer-top", titleText:"GPA", outerCircleColor:'#0085c8', innerCircleColor:'#909081'});
                     }
                 </script>
             </div>
-            <div id="example" style="width: 50%;height: 40%"></div>
+            <div id="example" style="width: 25%;height: 20%"></div>
 
         </div>
     </section>
